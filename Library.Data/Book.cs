@@ -2,11 +2,16 @@
 {
     public class Book
     {
+        public Book(string title)
+        {
+            Title = title;
+        }
+
         public string Title { get; set; }
 
         public string Description { get; set; }
 
-        public Author Author { get; set; }
+        public Author[] Authors { get; set; }
 
         public GenreEnum Genre { get; set; }
 
