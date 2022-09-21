@@ -1,10 +1,29 @@
-﻿namespace Library.ConsoleApp
+﻿using Library.Data;
+
+namespace Library.ConsoleApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var bookLibrary = new BookLibrary();
+
+            while(true)
+            {
+                var menuSelection = Menu.GetUserMenuSelection();
+
+                switch (menuSelection)
+                {
+                    case "A":
+                        break;
+                    case "R":
+                        break;
+                    case "S":
+                        break;
+                    case "E":
+                        return;
+                }
+            }
         }
     }
 }

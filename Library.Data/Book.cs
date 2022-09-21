@@ -19,5 +19,10 @@
 
         public byte Rating { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Title}\n{Description}";
+        }
+
     }
 }
