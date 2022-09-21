@@ -15,6 +15,7 @@ namespace Library.ConsoleApp
                 switch (menuSelection)
                 {
                     case "A":
+                        AddBookUIHelper.Start(bookLibrary);
                         break;
                     case "R":
                         break;
